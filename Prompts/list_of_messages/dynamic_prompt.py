@@ -1,16 +1,26 @@
+#Chatprompttemplate ->list of messages , dynamic
 from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
+from langchain_core.prompts import ChatPromptTemplate, MessagePlaceholder
+from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 
 load_dotenv()
+llm=ChatOpenAI()
+chathistory=[]
 
-model=ChatOpenAI()
 
-template=ChatPromptTemplate([
-    {'system':'u are professional {domain}'},
-    {'user':'tell me about {topic}'}
-    ])
+template=ChatPromptTemplate.from_messages([ 
+    ("system", "Act like a professional"),
+    MessagePlaceholder(variable_name='history')
+    ("human", "expalin the topic in detail \n {topic}")
+])
 
-prompt= template.invoke({'domain':'cricket', 'topic':'ball'})
 
-print(prompt)
+user_input=input('tell the topic u want to know about')
+prompt= template.invoke({'history':chathistory,
+                         'topic': user_input})
+
+
+result=llm.invoke(prompt)
+chathistory.append(result)
+print(result)
