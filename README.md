@@ -9,6 +9,9 @@ This repository focuses on understanding the fundamental building blocks require
 ## 📚 Topics Covered
 
 ### 🤖 Models
+
+Models are core interface that provide interface to applications powered by LLM.
+
 - Chat Models
 - Model Configuration
 - Temperature & Parameters
@@ -16,11 +19,15 @@ This repository focuses on understanding the fundamental building blocks require
 - Different LLM Providers
 
 ### ✍️ Prompt Engineering
+
+Prompts are instructions given to LLM to guide its output. 
+
 - Prompt Templates
 - Chat Prompt Templates
 - System Messages
 - Human Messages
 - AI Messages
+- Static Prompts
 - Dynamic Prompts
 
 ### 📦 Structured Output
@@ -31,6 +38,13 @@ This repository focuses on understanding the fundamental building blocks require
 - Schema Validation
 
 ### 🔗 Chains
+- Sequential Chains
+- Parallel Chains
+- Conditional Chains
+
+---
+
+### Runnables
 - Runnable Interface
 - RunnableLambda
 - RunnableSequence
