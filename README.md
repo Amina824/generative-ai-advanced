@@ -55,6 +55,12 @@ Prompts are instructions given to LLM to guide its output.
 
 ---
 
+### Document Loaders
+- TextLoader
+- PyPDFLoader
+
+---
+
 ## 🛠️ Tech Stack
 
 - Python
