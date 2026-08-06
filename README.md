@@ -70,6 +70,8 @@ LangChain's core composition primitives (LCEL).
 Ingesting external data into LLM-ready formats.
 - `TextLoader`
 - `PyPDFLoader`
+- `DirectoryLoader`
+- `CSVLoader`
 
 ---
 
