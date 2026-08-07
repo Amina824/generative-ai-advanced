@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/LangChain-Advanced-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain">
   <img src="https://img.shields.io/badge/OpenAI-API-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI">
   <img src="https://img.shields.io/badge/status-actively%20learning-brightgreen?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/badge/license-MIT-yellow?style=flat-square" alt="License">
 </p>
 
 <p align="center">
