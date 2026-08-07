@@ -65,13 +65,6 @@ LangChain's core composition primitives (LCEL).
 - `RunnableBranch` (Conditional Logic)
 - Building Modular AI Pipelines
 
-### 📄 Document Loaders
-Ingesting external data into LLM-ready formats.
-- `TextLoader`
-- `PyPDFLoader`
-- `DirectoryLoader`
-- `CSVLoader`
-
 ---
 
 ## 🗺️ Roadmap
@@ -134,7 +127,7 @@ git clone https://github.com/Amina824/GenAI-Advanced.git
 cd GenAI-Advanced
 ```
 
-### 3. Create a virtual environment (recommended)
+### 3. Create a virtual environment 
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
